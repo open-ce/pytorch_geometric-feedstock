@@ -18,24 +18,24 @@ requirements:
   host:
     - pip
     - pytest-runner
-    - python
-    - setuptools
+    - python {{ python }}
+    - setuptools {{ setuptools }}
   run:
-    - googledrivedownloader
+    - googledrivedownloader  {{ googledrivedownloader }}
     - jinja2
-    - networkx
-    - numpy
+    - networkx  {{ networkx }}
+    - numpy {{ numpy }}
     - pandas
     - pyparsing
-    - python >=3.6
+    - python {{ python }}
     - python-louvain
-    - requests
-    - rdflib
-    - scikit-learn
-    - scipy
-    - tqdm
-    - pytorch
-    - pytorch_sparse
+    - requests {{ requests }}
+    - rdflib {{ rdflib }}
+    - scikit-learn 
+    - scipy {{ scipy }}
+    - tqdm  {{tqdm }}
+    - pytorch-base {{ pytorch }}
+    - pytorch_sparse  {{ pytorch_sparse }}
 
 test:
   imports:
