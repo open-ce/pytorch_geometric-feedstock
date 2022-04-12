@@ -18,7 +18,7 @@ requirements:
   host:
     - pip
     - pytest-runner
-    - python 
+    - python
     - setuptools {{ setuptools }}
   run:
     - googledrivedownloader  {{ googledrivedownloader }}
@@ -27,7 +27,7 @@ requirements:
     - numpy {{ numpy }}
     - pandas
     - pyparsing
-    - python 
+    - python
     - python-louvain
     - requests {{ requests }}
     - rdflib {{ rdflib }}
