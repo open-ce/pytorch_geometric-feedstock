@@ -10,7 +10,7 @@ source:
   sha256: 59c41993a0f6cc0e29efa6ca6274cc97bd6557e54bf7d3d38213933f821701c6
 
 build:
-  number: 0
+  number: 1
   script: {{ PYTHON }} -m pip install . -vv
   noarch: python
 
@@ -19,23 +19,23 @@ requirements:
     - pip
     - pytest-runner
     - python
-    - setuptools
+    - setuptools {{ setuptools }}
   run:
-    - googledrivedownloader
+    - googledrivedownloader  {{ googledrivedownloader }}
     - jinja2
-    - networkx
-    - numpy
+    - networkx  {{ networkx }}
+    - numpy {{ numpy }}
     - pandas
     - pyparsing
-    - python >=3.6
+    - python
     - python-louvain
-    - requests
-    - rdflib
+    - requests {{ requests }}
+    - rdflib {{ rdflib }}
     - scikit-learn
-    - scipy
-    - tqdm
-    - pytorch
-    - pytorch_sparse
+    - scipy {{ scipy }}
+    - tqdm  {{tqdm }}
+    - pytorch-base {{ pytorch }}
+    - pytorch_sparse  {{ pytorch_sparse }}
 
 test:
   imports:
@@ -50,5 +50,4 @@ about:
 
 extra:
   recipe-maintainers:
-    - bubblyorca
-    - mxr-conda
+    - open-ce/open-ce-dev-team
