@@ -40,7 +40,8 @@ requirements:
 test:
   imports:
     - torch_geometric
-
+  commands:
+    - pip check
 about:
   home: https://github.com/rusty1s/pytorch_geometric
   summary: Geometric Deep Learning Extension Library for PyTorch
