@@ -36,7 +36,7 @@ requirements:
     - tqdm  {{tqdm }}
     - pytorch-base {{ pytorch }}
     - pytorch_sparse  {{ pytorch_sparse }}
-
+    - yacs
 test:
   imports:
     - torch_geometric
