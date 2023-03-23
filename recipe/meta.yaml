@@ -31,7 +31,7 @@ requirements:
     - python-louvain
     - requests {{ requests }}
     - rdflib {{ rdflib }}
-    - scikit-learn
+    - scikit-learn {{ scikit_learn }}
     - scipy {{ scipy }}
     - tqdm  {{tqdm }}
     - pytorch-base {{ pytorch }}
