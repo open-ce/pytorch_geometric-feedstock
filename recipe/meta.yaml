@@ -1,5 +1,5 @@
 {% set name = "torch_geometric" %}
-{% set version = "2.2.0" %}
+{% set version = "2.3.0" %}
 
 package:
   name: py{{ name|lower }}
@@ -10,8 +10,8 @@ source:
   git_rev: {{ version }}
 
 build:
-  number: 2
-  script: {{ PYTHON }} -m pip install . -vv
+  number: 1
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
   noarch: python
 
 requirements:
