@@ -1,5 +1,5 @@
 {% set name = "torch_geometric" %}
-{% set version = "2.3.0" %}
+{% set version = "2.3.1" %}
 
 package:
   name: py{{ name|lower }}
